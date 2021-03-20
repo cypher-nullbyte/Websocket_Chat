@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cypher-nullbyte/Websocket_Chat.git"
+  },
+  "author": "cYpHeR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cypher-nullbyte/Websocket_Chat/issues"
+  },
+  "homepage": "https://github.com/cypher-nullbyte/Websocket_Chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  }
+}
