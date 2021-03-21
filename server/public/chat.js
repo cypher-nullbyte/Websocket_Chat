@@ -29,5 +29,8 @@ socket.on('chat', function(data){
 });
 
 socket.on('typing',(data)=>{
-    feedback.innerHTML='<p><em>'+data+'is typing ...</em></p>';
+    feedback.innerHTML='<p><em>'+data+'</em> is typing ...</p>';
+    setTimeout(()=>{
+        feedback.innerHTML="";
+    },2000);
 });

@@ -22,12 +22,19 @@ const io=socket(server);
 io.on('connection',(socket)=>{
     console.log('Made Socket Connection '+socket.id);
     socket.on('chat',function(data){
-        io.sockets.emit('chat',data);
+        if(data.handle && data.message)
+            io.sockets.emit('chat',data);
     });
 
     socket.on('typing',function(data)
     {
-        socket.broadcast.emit('typing',data);
+        // let x=setInterval(() => {
+        //     socket.broadcast.emit('typing',data);
+        // }, 1000);
+        // setTimeout(()=>{
+        //     clearInterval(x);
+        // },1200);
+        if(data) socket.broadcast.emit('typing',data);
     });
 });
 
