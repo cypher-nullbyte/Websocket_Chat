@@ -1,7 +1,7 @@
 # Websocket_Chat
 Simple WebSocket Chat App with Socket.io
 
-####Output
+### Output
 
 ![Image-1](./images/1.png?raw=true "WebSocket Chat")
 
